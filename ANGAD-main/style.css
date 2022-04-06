@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+:root {
+  --green: #01bdae;
+  --grey: #282442;
+  --white: #feffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Home Section Starts */
+.container1 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--grey);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.container1 span {
+  color: var(--green);
+}
+
+.btn {
+  padding: 15px 40px;
+  background-color: transparent;
+  border: 2px solid var(--green);
+  transition: all 0.8s ease-in-out;
+  box-shadow: inset 0 0 0 0 var(--green);
+  color: var(--green);
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.btn a {
+  text-decoration: none;
+}
+
+.btn:hover {
+  box-shadow: inset 250px 0 0 var(--green);
+  color: var(--white);
+}
+
+/* Home Section Ends */
+
+/* About Section Starts */
+
+.container2 {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--green) 10%, #13968b 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+.part1 {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.part2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 70vh;
+}
+
+.img-section {
+  width: 50%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-section img {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 40px;
+}
+
+.content-section {
+  width: 50%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-section p {
+  width: 80%;
+  font-size: 20px;
+  color: var(--white);
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
+
+/* About Section Ends */
+
+/* Project Section */
+.container3 {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.project-top {
+  color: var(--grey);
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.card-1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.left-side {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  color: var(--grey);
+}
+
+.left-side h2 {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.right-side {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.card-2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.right-side img {
+  width: 40rem;
+  height: 20rem;
+}
+
+/* Contact Section Starts*/
+.container4 {
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+  background-color: var(--green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.container4 h1 {
+  color: var(--white);
+  font-size: 48px;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 50px;
+}
+
+.container4 h4 {
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn1 {
+  padding: 15px 40px;
+  background-color: transparent;
+  border: 2px solid var(--white);
+  transition: all 0.8s ease-in-out;
+  box-shadow: inset 0 0 0 0 var(--white);
+  color: var(--white);
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.btn1 a {
+  text-decoration: none;
+}
+
+.btn1:hover {
+  box-shadow: inset 250px 0 0 var(--white);
+  color: var(--green);
+}
+/* Contact Section Ends */
+
+@media screen and (max-width: 1000px) {
+  /* Home Section Starts */
+  .container1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .btn {
+    padding: 10px 30px;
+  }
+  /* Home Section Ends */
+
+  /* About Section Starts*/
+  .container2 {
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .part2 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .img-section img {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .content-section {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* About Section Ends */
+
+  /* Project Section */
+  .container3 {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-top {
+    color: var(--grey);
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .card-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: column;
+  }
+
+  .left-side {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 40%;
+    color: var(--grey);
+  }
+
+  .left-side h2 {
+    font-size: 24px;
+    font-weight: 900;
+  }
+
+  .right-side {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .card-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: column;
+  }
+
+  .right-side img {
+    width: 22rem;
+    height: 12rem;
+  }
+  /* Project Section Ends */
+}
+
+@media screen and (max-width: 786px) {
+  /* Home Section Starts */
+  .container1 h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+  }
+
+  .btn {
+    padding: 5px 25px;
+  }
+  /* Home Section Ends */
+  /* About Section Starts*/
+  .container2 {
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .img-section {
+    height: 100%;
+  }
+
+  .part2 {
+    display: flex;
+    flex-direction: column;
+    height: 180%;
+  }
+
+  .img-section img {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .content-section {
+    height: 22rem;
+  }
+  /* About Section Ends */
+
+  /* Project section starts */
+  .container3 {
+    width: 100%;
+    height: 100%;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .right-side img {
+    width: 20rem;
+    height: 10rem;
+  }
+  /* project section ends*/
+}
